@@ -1,0 +1,100 @@
+.game-container {
+    text-align: center;
+}
+
+.game-title {
+    margin: 20px 0;
+}
+
+.start-button {
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1px;
+    width: 400px;
+    margin: 20px auto;
+}
+
+.board-row {
+    display: contents;
+}
+
+.board-cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell {
+    width: 100%;
+    height: 100%;
+}
+
+.black-cell {
+    background-color: #000000;
+}
+
+.red-cell {
+    background-color: #ff0000;
+}
+
+.black-piece {
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.black-king {
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.black-king::before {
+    content: 'K';
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red-piece {
+    background-color: #ff0000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.red-king {
+    background-color: #ff0000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.red-king::before {
+    content: 'K';
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
